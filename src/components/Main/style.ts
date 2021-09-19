@@ -3,22 +3,34 @@ import styled from "styled-components";
 export const MainStyled = styled.main`
     width: 100%;
     padding: 10px 0;
+    display: flex;
+    justify-content: center;
     .container{
       width: 100%;
-      max-width: 1280px;
+      max-width: 768px;
       padding: 0 2%;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+     
 
-      input{
+      
+
+      textarea{
         border: 0;
+        outline: 0;
+
+        font-size: 18px;
+        resize: none;
+        margin: 20px;
         width: 300px;
         height: 45px;
-        padding-left: 15px;
-        border-radius: 12px;
+        padding: 8px;
         background-color: #fff;
+        width: 100%;
+
+        height: 180px;
       }
       .btn-enviar{
         border: 0;
@@ -31,9 +43,7 @@ export const MainStyled = styled.main`
         font-weight: bold;
         background-color: #2c97d4;
         transition: all .4s;
-        margin: 8px 0;
         &:hover{
-          margin: 12px 0;
           background-color: #1a79af;
         }
       }
@@ -41,50 +51,24 @@ export const MainStyled = styled.main`
         margin: 0 auto;
         width: 100%;
         display: flex;
+        gap: 15px;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         li{
           margin: 3px 0;
-          height: 35px;
           width: 100%;
           max-width: 768px;
-          align-items: center;
-          justify-content: space-between;
-          p{
-            height: 100%;
-            width: 80%;
-            display: inline-block;
-            
-          }
-          button{
-            height: 100%;
-            width: 20%;
-            cursor: pointer;
-            display: inline-block;
-            border: 0;
-            border-radius: 12px;
-            color: white;
-            text-transform: uppercase;
-          }
+          display: flex;
+          flex-direction: column;
         
-          .red{
-          background-color: #eb4c4c;
-          transition: all .4s;
-          &:hover{
-            background-color: #4ebd23;
-            transition: all .4s;
+        
+          p{
+            width: 100%;
+            background-color: white;
+            padding: 3px;
+            min-height: 30px;
           }
-        }
-        .green{
-          background-color: green;
-          transition: all .4s;
-          &:hover{
-            background-color: #f54832;
-          }
-        }
-
-
 
         }
       }
