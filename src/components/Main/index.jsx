@@ -33,6 +33,19 @@ export const Main = () => {
     addTask(inputText)
   }
   
+  async function muda(id){
+    function tarefa(){
+    const index = tasks.findIndex(task => task.id === id)
+     console.log(tasks[index])
+    }
+     await api.put(`/${id}`, {
+      tarefa: tarefa(),
+      stat: true 
+      });
+    const index = tasks.findIndex(task => task.id === id)
+
+    setTasks([...tasks])
+  }
 
   return(
     <MainStyled>
@@ -44,9 +57,9 @@ export const Main = () => {
       <ul className="tarefas">
         {
           tasks.map(val => (
-            <li>
+            <li key={val.id}>
               <p>{val.tarefa}</p>
-              <button className={val.stat === 'false'? "green" : "red" }>tarefa comprida?</button>   
+              <button onClick={muda(val.id)} className={val.stat === 'false'? "green" : "red" }>tarefa comprida?</button>   
             </li>
           ))
         }

@@ -70,9 +70,18 @@ export const MainStyled = styled.main`
         
           .red{
           background-color: #eb4c4c;
+          transition: all .4s;
+          &:hover{
+            background-color: #4ebd23;
+            transition: all .4s;
+          }
         }
         .green{
           background-color: green;
+          transition: all .4s;
+          &:hover{
+            background-color: #f54832;
+          }
         }
 
 
