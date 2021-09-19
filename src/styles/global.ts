@@ -11,4 +11,10 @@ export default createGlobalStyle`
     height: 100%;
     font-family: 'Open Sans', sans-serif;
   }
+  ul{
+    list-style-type: none;
+  }
+  body{
+    background-color: #dde0e2;
+  }
 `
