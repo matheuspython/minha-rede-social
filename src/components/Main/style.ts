@@ -14,7 +14,9 @@ export const MainStyled = styled.main`
       justify-content: center;
       flex-direction: column;
      
-
+      .post{
+        width: 100%;
+      }
       
 
       textarea{
@@ -67,7 +69,8 @@ export const MainStyled = styled.main`
             width: 100%;
             background-color: white;
             padding: 3px;
-            min-height: 30px;
+            min-height: 80px;
+            margin: 10px 0;
           }
 
         }

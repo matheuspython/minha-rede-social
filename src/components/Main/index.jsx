@@ -43,7 +43,7 @@ export const Main = () => {
        name="sheiliane silva"
        comentario="que ferias de verão sensacional 💜 foi incrivel e tive experiencias otimas voltei renovada" />
 
-        <img src="https://blog.bemmaisseguro.com/wp-content/uploads/2014/12/seguro-viagem-bemmaisseguro.com_.jpg" alt="imagem de ferias na praia" />
+        <img className="post" src="https://blog.bemmaisseguro.com/wp-content/uploads/2014/12/seguro-viagem-bemmaisseguro.com_.jpg" alt="imagem de ferias na praia" />
         <textarea placeholder="comente aqui" type="text" name="tarefa" onChange={onChange} >
         </textarea> 
         <button className="btn-enviar" onClick={adiciona} type="button">adicionar comentario</button>   
